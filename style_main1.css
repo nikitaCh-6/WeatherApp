@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#weatherDisplay {
+    margin-top: 20px;
+}
+
+/* Ensure that all elements have no margin and padding, and set box-sizing to border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body and html to occupy the full height and width of the viewport */
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Set the background image for the body, ensuring it covers the entire screen */
+body {
+    background: url('image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Ensures text is readable against the background */
+}
+
+/* Style for the main heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the input and button, centering them on the screen */
+input[type="text"], button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Style for the weather display section */
+#weatherDisplay {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Optional: Adding an overlay for better readability of text */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* A dark overlay */
+    z-index: -1; /* Send the overlay behind the content */
+}
